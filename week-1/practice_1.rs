@@ -1,3 +1,3 @@
-fd main() {
-	println!("Welcome nigga")
+fn main() {
+	println!("Welcome to COS101")
 }
