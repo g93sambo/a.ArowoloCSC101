@@ -6,7 +6,7 @@ fn main(){
     for i in 0..sum.len(){
         sum[i] = amount[i] * quantity[i];
     }
-    let total: i32 = sum.iter().sum(); 
+    let total: i32 = quantity.len();
     let  sum_of_q: i32 = quantity.iter().sum();
     let average = total/sum_of_q;
     println!("{average}");
