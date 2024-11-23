@@ -1,6 +1,8 @@
 use std::io;
 fn main() {
-   let mut age_inp = String::new();
+   
+ for i in 1..3{
+    let mut age_inp = String::new();
    let mut exp_inp = String::new();
 
    io::stdin()
@@ -13,7 +15,6 @@ fn main() {
    .expect("not an option");
     let binding = exp_inp.to_lowercase();
     let exp = binding.trim();
-
     if age >=40 && exp == "true" {
         let pay = 1_560_000;
         println!("your pay is N{}", pay);
@@ -26,10 +27,12 @@ fn main() {
         println!("your pay is N{}", pay);
     } else if exp != "true" && exp != "false"{
         println!("please try again and enter true or false");
-
     }
     else{
         let pay = 100_000;
         println!("your pay is N{}", pay);
     }
+    }
+
+    
 }
