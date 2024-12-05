@@ -21,6 +21,8 @@ fn main() {
         }
         let price_per_item:u32;
 
+        
+
         if choice == "p" {
             price_per_item = 3200;
         } else if choice == "f" {
