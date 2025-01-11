@@ -46,12 +46,13 @@ fn main() {
 
     for i in &inventory{
         let order_quantity = 3;
+        let remaining_quantity = i.quantity - order_quantity;
         let  cost  = i.total_cost(order_quantity);
         println!(
             "You ordered {} of {} laptops and it will cost you: {}",
            order_quantity, i.brand, cost
         );
-
+        println!("you have {} units of {} left", remaining_quantity, i.brand);
         total_price+=cost;
     }
     println!("Total price for ordering 3 of each laptop: {}", total_price);
